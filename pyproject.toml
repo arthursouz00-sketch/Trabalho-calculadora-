@@ -1,0 +1,28 @@
+[project]
+name = "visual-office-manager"
+version = "2.0.0"
+description = "Calendário, calculadora, cadastro de pessoas e gestão financeira — edição de Natal."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "flet==1.1.3",
+    "pillow>=10.3.0",
+    "flet-camera==1.1.3",
+]
+
+[tool.flet]
+product = "Visual Office Manager"
+org = "br.edu.visualoffice"
+company = "Visual Office"
+copyright = "Projeto acadêmico"
+permissions = ["camera"]
+
+[tool.flet.web]
+# versão web estática (flet publish): só o necessário para rodar no navegador
+dependencies = ["flet==1.1.3", "pillow"]
+
+[tool.flet.app]
+path = "."
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

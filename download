@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+data/
+build/
+.venv/
+deploy/evolution/.env
+dist_web/
